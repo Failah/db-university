@@ -1,3 +1,6 @@
+QUERY EXERCISES PART 2 - 21/10/2022
+
+
 1. Contare quanti iscritti ci sono stati ogni anno
 
 SELECT COUNT(`enrolment_date`), YEAR(`enrolment_date`)
@@ -112,3 +115,4 @@ INNER JOIN `students`
 ON `exam_student`.`student_id` = `students`.`id`
 GROUP BY `students`.`id`, `courses`.`id`
 ORDER BY `students`.`surname`
+
