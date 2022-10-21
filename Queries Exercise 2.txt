@@ -7,12 +7,13 @@ GROUP BY YEAR(`enrolment_date`);
 
 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
-
-
+SELECT COUNT(`office_number`) AS `teachers_number`, `office_number`
+FROM `teachers`
+GROUP BY `office_number`
+HAVING COUNT(`office_number`) > 1;
 
 
 3. Calcolare la media dei voti di ogni appello d'esame
-
 
 
 
@@ -22,9 +23,7 @@ GROUP BY YEAR(`enrolment_date`);
 
 
 
-
 5. Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
-
 
 
 
@@ -34,9 +33,7 @@ GROUP BY YEAR(`enrolment_date`);
 
 
 
-
 7. Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
-
 
 
 
@@ -46,15 +43,12 @@ GROUP BY YEAR(`enrolment_date`);
 
 
 
-
 9. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
 
 
 
 
-
 10. Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
-
 
 
 
