@@ -1,3 +1,11 @@
+<!-- 
+
+    PRIMO ESERCIZIO PHP + SQL
+
+    Consegna: collegati al database tramite php, definisci una query complessa e mostrala nel browser. 
+
+-->
+
 <?php
 
 define("DB_SERVERNAME", "localhost:3306");
@@ -42,4 +50,5 @@ if ($result && $result->num_rows > 0) {
     echo "0 results";
 } else {
     echo "query error";
+    die();
 }
